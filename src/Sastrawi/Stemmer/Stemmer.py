@@ -82,6 +82,5 @@ class Stemmer(object):
         """Stem a singular word to its common stem form."""
         context = Context(word, self.dictionary, self.visitor_provider)
         context.execute()
-
         return context.result
 
